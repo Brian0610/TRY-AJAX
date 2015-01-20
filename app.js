@@ -14,7 +14,7 @@ $(document).ready(function(){
 	}; 
 
 	$('button').click(function(){
-		$('.results').html(preload).load(loadURL); 
+		//$('.results').html(preload).load(loadURL); 
 		$('.results').append("<p>" + u2.name + " is the " + u2.job + " for U2.</p>");  
 	}); 
 
