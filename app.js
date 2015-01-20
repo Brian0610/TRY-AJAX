@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	
 	$.ajaxSetup({
-		cache: false; 
+		cache: false
 	}); 
 
 	var preload = '<img src="images/preloader.gif" alt="loading..." />'; 
