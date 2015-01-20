@@ -7,7 +7,7 @@ $(document).ready(function(){
 	var preload = '<img src="images/preloader.gif" alt="loading..." />'; 
 
 	$('button').click(function(){
-		alert('holy crap, it works!'); 
+		$('.results').html(preload);  
 	}); 
 
 }); 
