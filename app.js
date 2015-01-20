@@ -6,8 +6,10 @@ $(document).ready(function(){
 
 	var preload = '<img src="images/preloader.gif" alt="loading..." />'; 
 
+	var loadURL = 'ajax/statement.txt'; 
+
 	$('button').click(function(){
-		$('.results').html(preload);  
+		$('.results').html(preload).load(loadURL);  
 	}); 
 
 }); 
