@@ -8,8 +8,13 @@ $(document).ready(function(){
 
 	var loadURL = 'ajax/u2.json'; 
 
+	var u2 = {
+		name: "Bono", 
+		job: "vocalist"
+	}; 
+
 	$('button').click(function(){
-		$('.results').html(preload).load(loadURL).append("<p>" + u2[0].name + " is the " + u2[0].job + " vocalist for U2.</p>");  
+		$('.results').html(preload).load(loadURL).append("<p>" + u2.name + " is the " + u2.job + " for U2.</p>");  
 	}); 
 
 }); 
