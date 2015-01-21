@@ -11,7 +11,7 @@ $(document).ready(function(){
 	
 
 	$('button').click(function(){
-		$('.results').html(preload).load(loadURL + " #groot"); 		
+		$('.results').html(preload).load(loadURL + "#groot"); 		
 	}); 
 
 }); 
