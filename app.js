@@ -6,16 +6,12 @@ $(document).ready(function(){
 
 	var preload = '<img src="images/preloader.gif" alt="loading..." />'; 
 
-	var loadURL = 'ajax/u2.json'; 
+	var loadURL = 'ajax/grootbio.text'; 
 
-	var u2 = {
-		name: "Bono", 
-		job: "vocalist"
-	}; 
+	
 
 	$('button').click(function(){
-		//$('.results').html(preload).load(loadURL); 
-		$('.results').append("<p>" + u2.name + " is the " + u2.job + " for U2.</p>");  
+		$('.results').html(preload).load(loadURL); 		
 	}); 
 
 }); 
