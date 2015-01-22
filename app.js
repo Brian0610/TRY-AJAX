@@ -6,18 +6,21 @@ $(document).ready(function(){
 
 	var preload = '<img src="images/preloader.gif" alt="loading..." />'; 
 
-	var loadURL = 'ajax/grootbio.text'; 
+	var jsonURL = 'ajax/bono.json'; 
 
 	
 
 	$('button').click(function(){
 		$('.results')
-			.html(preload)
-			.load(loadURL, null, function(response, status, xhr){
-				
-					alert("Response:\n" + xhr.status + xhr.statusText);
-								
-			}); 		
+			.html(preload); 
+			$.getJSON(
+				jsonURL, 
+				null, 
+				function(){
+					var singer = "Bono\'s real name is: \n" + bono.name; 
+					$('.results').html(singer); 
+				}
+			); 
 	}); 
 
 }); 
