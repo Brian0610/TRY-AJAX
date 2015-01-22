@@ -13,8 +13,10 @@ $(document).ready(function(){
 	$('button').click(function(){
 		$('.results')
 			.html(preload)
-			.load(loadURL, null, function(xhr){
-				alert("Response:\n" + xhr.statusText);
+			.load(loadURL, null, function(response, status, xhr){
+				if(status == "OK"){
+					alert("Response:\n" + xhr.status + xhr.statusText);
+				}; 				
 			}); 		
 	}); 
 
