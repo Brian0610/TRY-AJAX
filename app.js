@@ -14,9 +14,9 @@ $(document).ready(function(){
 		$('.results')
 			.html(preload)
 			.load(loadURL, null, function(response, status, xhr){
-				if(status == "OK"){
+				
 					alert("Response:\n" + xhr.status + xhr.statusText);
-				}; 				
+								
 			}); 		
 	}); 
 
