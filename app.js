@@ -13,8 +13,8 @@ $(document).ready(function(){
 	$('button').click(function(){
 		$('.results')
 			.html(preload)
-			.load(loadURL, null, function(responseText){
-				alert("Response:\n" + responseText);
+			.load(loadURL, null, function(oranges){
+				alert("Response:\n" + oranges);
 			}); 		
 	}); 
 
