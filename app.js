@@ -13,8 +13,8 @@ $(document).ready(function(){
 	$('button').click(function(){
 		$('.results')
 			.html(preload)
-			.load(loadURL, null, function(status){
-				alert("Response:\n" + status);
+			.load(loadURL, null, function(xhr){
+				alert("Response:\n" + xhr.statusText);
 			}); 		
 	}); 
 
